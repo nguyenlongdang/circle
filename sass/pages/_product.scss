@@ -1,0 +1,89 @@
+.section {
+    &__category {
+        .accordion__title {
+            cursor: pointer;
+            margin: 0;
+            position: relative;
+          }
+          
+          .accordion__icon {
+            position: absolute;
+            top: 50%;
+            right: 24px;
+            transform: translateY(-50%);
+          }
+          
+          .accordion__icon .line-01,
+          .accordion__icon .line-02 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 16px;
+            height: 2px;
+            background-color: #272343;
+            transition: 0.3s;
+          }
+          
+          .accordion__icon .line-02 {
+            transform: rotate(90deg);
+          }
+          
+          .accordion__content {
+            display: none;
+          }
+          
+          .accordion--open > .accordion__title .line-02 {
+            transform: rotate(0deg);
+          }
+
+          .accordion {
+            margin-top: -1px;
+            border-top: 1px solid #272343;
+            border-bottom: 1px solid #272343;
+          }
+          
+          .accordion__title {
+            padding: 20px 16px;
+            font-size: 16px;
+            transition: 0.2s;
+          }
+          
+          .accordion__content {
+            padding: 24px 16px;
+          }
+          
+          .accordion__content p {
+            margin: 0 0 16px;
+          }
+          
+          .accordion__title:hover {
+            background-color: #433d6f;
+            color: #fff;
+          }
+          
+          .accordion__title:hover .line-01,
+          .accordion__title:hover .line-02 {
+            background-color: #fff;
+          }
+          
+          .accordion--open > .accordion__title {
+            background-color: #272343;
+            color: #fff;
+          }
+          
+          .accordion--open > .accordion__title .line-01,
+          .accordion--open > .accordion__title .line-02 {
+            background-color: #fff;
+          }
+          
+          .accordion--nested .accordion__title {
+            padding: 16px;
+            font-size: 14px;
+          }
+          
+          .accordion--nested .accordion__content {
+            padding: 24px 16px 16px;
+          }
+          
+    }
+}
