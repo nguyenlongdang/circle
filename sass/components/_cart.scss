@@ -1,0 +1,99 @@
+.section {
+    &__sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 330px;
+        height: 100%;
+        background-color: $bgWhite;
+        z-index: 999;
+        padding: 20px 15px;
+        overflow-y: scroll;
+        transform: translateX(330px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out 0s;
+
+        &.active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &-header {
+            border-bottom: $borderBottom;
+            padding-bottom: 10px;
+
+            &-name {
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: 0.5px;
+            }
+
+            &-times {
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+
+        &-content {
+            padding-top: 10px;
+            border-bottom: $borderBottom;
+
+            &-item {
+                border-bottom: $borderBottom;
+                padding: 10px 0px;
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+
+            &-thumb {
+                img {
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                }
+            }
+
+            &-info {
+                h5 {
+                    white-space: nowrap;
+                    width: 150px;
+                    overflow: hidden;
+                    font-size: 15px !important;
+                    margin-top: 5px;
+                    text-overflow: ellipsis;
+                }
+                
+                &-price {
+                    color: $colorRed;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+
+            &-remove {
+                margin-left: 30px;
+            }
+        }
+
+        &-redirect {
+            margin-top: 20px;
+            
+            &-btn {
+                background-color: $bgBlue;
+                display: inline-block;
+                padding: 10px 20px;
+                color: $colorWhite;
+                text-transform: capitalize;
+
+                &:hover {
+                    background-color: $bgDark;
+                    color: $colorWhite;
+                }
+            }
+        }
+    }
+}

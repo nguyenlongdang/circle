@@ -1,0 +1,14 @@
+{
+  "name": "circle",
+  "version": "1.0.0",
+  "description": "Ecommerce Website Demo FrontEnd",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [],
+  "author": "Nguyen Long Dang",
+  "license": "ISC"
+}

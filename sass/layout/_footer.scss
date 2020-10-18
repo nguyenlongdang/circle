@@ -1,0 +1,32 @@
+.footer {
+    margin-top: 50px;
+    background-color: $bgBlue;
+    color: $colorWhite;
+    padding-top: 50px;
+    padding-bottom: 40px;
+
+    &-logo {
+        margin-bottom: 40px;
+
+    }
+
+    h6 {
+        margin-bottom: 35px;
+        font-size: 18px;
+        font-weight: 700;
+        color: $colorBody !important;
+        text-transform: uppercase;
+    }
+
+    &_menu {
+        a {
+            display: inline-block;
+            line-height: 24px;
+            color: $colorWhite;
+
+            &:hover {
+                margin-left: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.section {
+    &__modal {
+        img {
+            text-align: center;
+            border: $borderBottom;
+            width: 100%;
+        }
+
+        &-info {
+            &-name {
+                h5 {
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                }
+            }
+
+            &-price {
+                margin-bottom: 20px;
+
+                &-buy {
+                    color: $colorRed;
+                    font-weight: 600;
+                    font-size: 17px;
+                }
+
+                &-root {
+                    text-decoration: line-through;
+                    color: $colorGrey;
+                }
+            }
+
+            &-btn {
+                a {
+                    background-color: $bgDark;
+                    color: $colorWhite;
+                    display: inline-block;
+                    margin-right: 5px;
+                    padding: 5px 15px;
+                    text-transform: capitalize;
+                    border-radius: 25px;
+
+                    &:hover {
+                        background-color: $bgBlue;
+                    }
+                }
+            }
+        }
+    }
+}
